@@ -1,5 +1,5 @@
 # Ports Scanner PHP CLI
-PHP script to scan a range of ports to check if ports are close or open.
+PHP script to scan a range of ports and check if ports are close or open.
 
 **NOTE:** Tested with PHP 7.2
 
