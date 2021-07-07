@@ -1,11 +1,14 @@
 <?php 
 /**
- * @author  Samy Younsi <samyyounsi@hotmail.fr>
- * Scan a range of ports from an IP address to check if the ports are close or open
+ * @package   portsmap.php
+ * @author    Samy Naqwada <naqwada@pm.me>
+ * @license   MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @link      https://github.com/Naqwada/Ports-Scanner-PHP-CLI
+ * Scan a range of ports from an IP address to check if ports are close or open
  * How to use:
- * php portmap.php $ip_address $port_start-$port_end
+ * php portsmap.php $ip_address $port_start-$port_end
  * Example:
- * php portmap.php 192.168.1.1 21-3306
+ * php portsmap.php 192.168.1.1 21-3306
  */
 set_time_limit(0);
 error_reporting(0);
@@ -13,9 +16,9 @@ error_reporting(0);
 class Portmap {
   public function __construct($argv) {
     if(empty($argv[1]) || empty($argv[2])) {
-      echo "\033[31m Error \r\n";
-      echo "\033[00m How to use \r\n";
-      echo "\033[00m php portscan.php 192.168.1.1 21-3306 \r\n";
+      echo "\033[31m Error ... \r\n";
+      echo "\033[00m How to use: \r\n";
+      echo "\033[00m php portsmap.php 192.168.1.1 21-3306 \r\n";
       exit;
     }
     
